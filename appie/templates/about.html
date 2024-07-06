@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+{% load static %}
+{% block style %}
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Product Sans:wght@400;700&display=swap" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains Mono:wght@800&display=swap" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karma:wght@700&display=swap" />
+<link rel="stylesheet" href="{% static "css/about_css.css" %}" />
+{% endblock %}
+{% block body %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+</head>
+
+<body>
+    <h1 class="center" id="heading__about">About Us</h1>
+    <div class="desktop-2">
+        <div class="frame">
+            <div class="rectangle-parent">
+                <div class="frame-child"></div>
+                <p class="we-are-very">
+                    We are very pleased to introduce ourselves as a Repairer and Service provider of TRANSFORMER , MOTOR
+                    AND SWITCHGEAR . WE have started our journey in 2010 as “IP ENTERPRISE”. During this prolonged time,
+                    we have repaired so many Transformers and provided Service also.
+                    Now we have formed this Partnership firm and started Transformer, Motors ( A C & D C ) and
+                    Switchgear Repairing and Servicing dedicatedly. Side by side we manufacture also (Transformer).
+                    After completion of Our Education, we have started our career with a Transformer Company and
+                    finished with an another Reputed Transformer Company, after 25 Years. During this long journey, we
+                    have gathered a vast experience on FURNACE DUTY TRANSFORMER such as Induction furnace transformer up
+                    to 24 pulse, LRF, ARC Furnace duty Transformer, Power Transformer up to 132 KV, Solar Transformer,
+                    Earthing / Zig-Zag Transformer, Dry type Transformer Etc.
+                    Now we have a modern and equipped organization with all facilities under single roof. We have
+                    experienced workers and Engineers to overcome all sorts of problems.
+                    We have confidence to satisfy our client, if we get a chance to serve you.
+                    <br>
+                    <br>
+                    NOTE: A) We are a Registered Company under MSME. <br><br>MSME/UDYAM REGISTRATION NUMBER: UDYAM-WB-18-0010419 <br><br>
+                    GSTIN NO: 19AARFT6277F1ZG ;<br><br> PAN NO; AARFT6277F
+
+                </p>
+            </div>
+        </div>
+        <div class="inner-content-wrapper">
+            <div class="inner-content">
+                <div class="vector-parent">
+                    <img class="frame-item" alt="" src="{% static "images/bg-about.png" %}" />
+
+                    <img class="frame-inner" loading="lazy" alt="" src="{% static "images/logo_TE.jpeg" %}" />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+{% endblock %}

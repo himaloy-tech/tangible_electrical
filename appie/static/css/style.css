@@ -305,6 +305,13 @@ body {
     color: #342929;
 }
 
+@media (max-width: 800px) {
+    #card_main{
+        width: 100%;
+    }
+    
+}
+
 .card {
     width: 25rem;
     margin-bottom: 2rem;

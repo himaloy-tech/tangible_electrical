@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-g0zv+gy^!w4-yeg!r#j5rrx92%r4c#vzx&gwkvf)%p1k0*vxlp'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['www.tangibleelectrical.com', 'tangibleelectrical.com', '162.0.217.212']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -74,23 +74,23 @@ WSGI_APPLICATION = 'tangible_electrical.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
 DATABASES = {
     'default': {
-        'ENGINE': 'mysql.connector.django',
-        'NAME': 'tangoaot_tangible_electrical_main',
-        'HOST': 'localhost',
-        'PORT': '3306',
-        'USER': 'tangoaot_mrityunjoy',
-        'PASSWORD': '3a.qIie&w]B*',
-        'OPTIONS': {'init_command': "SET sql_mode='STRICT_TRANS_TABLES'" ,"use_pure": True},
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'mysql.connector.django',
+#         'NAME': 'tangoaot_tangible_electrical_main',
+#         'HOST': 'localhost',
+#         'PORT': '3306',
+#         'USER': 'tangoaot_mrityunjoy',
+#         'PASSWORD': '3a.qIie&w]B*',
+#         'OPTIONS': {'init_command': "SET sql_mode='STRICT_TRANS_TABLES'" ,"use_pure": True},
+#     }
+# }
 
 
 # Password validation
